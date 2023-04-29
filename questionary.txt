@@ -1,0 +1,23 @@
+What would you like to do?/-->add view or adddepartment
+What is the name of the department?
+--added Deparment name to data--
+
+what would you like to do?-->add view or add role
+What is the name of the role?
+what is the salary?
+which department does the role belong to?
+--added +servicess+ to data--
+
+what would you like to do?--view or add employee
+
+what is the employee first name?
+what is the employee last name?
+what is the employee role?
+who is the employee manager?-->list of manager
+--adde first + last name to data base--
+
+what woul you like to do?-->update employee
+which employee would you like to update?-->list
+
+
+
