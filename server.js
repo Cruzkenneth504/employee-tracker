@@ -8,7 +8,7 @@ const pool = mysql.createPool({
   password: 'password',
   database: 'departments_db'
 });
-
+//app function will be used as a callback function after every action
 const app = async () => {
   const conn = await pool.getConnection();
   console.log('Connected to database');
@@ -58,8 +58,8 @@ const app = async () => {
 // View Departments
 const viewDepartments = async (conn) => {
   const [departments] = await conn.query('SELECT * FROM departments');
-  console.table(departments)
-  app()
+  console.table(departments),
+  app();
 };
 
 // View Roles
