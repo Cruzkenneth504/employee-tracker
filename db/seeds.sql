@@ -1,11 +1,10 @@
--- Departments seed data
+
 INSERT INTO departments (department_name) VALUES
   ('Web Development'),
   ('Graphic Desing'),
   ('Marketing'),
   ('Nutrition');
 
--- Roles seed data
 INSERT INTO roles (title_name, salary_decimal, department_id) VALUES
   ('Web Developer Manager', 250000.00, 1),
   ('Senior Developer ', 150000.00, 1),
@@ -15,7 +14,7 @@ INSERT INTO roles (title_name, salary_decimal, department_id) VALUES
   ('Marketing Specialist', 90000.00, 3),
   ('Nutrition Manager', 110000.00, 4),
   ('Nutrition Specialist', 90000.00, 4);
--- Employees seed data
+
 INSERT INTO employees (first_name, last_name, role_id, manager_id) VALUES
   ('Ken', 'Cruz', 1, 1),
   ('Kenit', 'Rod', 1, NULL),
