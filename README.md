@@ -18,7 +18,7 @@ I created this project employee tracker to easily store and manage employee data
 
 **Install or open the Vs Code.**
 
-*  **Examples Below:**
+*  **Run CLI**
 
 ```CLI-step 1
 npm i
@@ -37,6 +37,7 @@ node server.js
 ## Images
 
  ![CLI-example](./imgs/main%20menu.png) 
+
 <br/>
 <br/>
 ![CLI-example](./imgs/table%20view.png)

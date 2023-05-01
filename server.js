@@ -159,4 +159,32 @@ const addEmployee = async (conn) => {
   console.log(`Added ${firstName} ${lastName} employee to database`)
   app();
 };
+// Update Employee Role
+const updateEmployeeRole = async (conn) => {
+  const [employees] = await conn.query('SELECT * FROM employees');
+  const [roles] = await conn.query('SELECT * FROM roles');
+  const { employeeId, roleId } = await inquirer.prompt([
+    {
+      type: 'list',
+      name: 'employeeId',
+      message: 'Select the employee to update:',
+      choices: employees.map((employee) => ({
+        name: `${employee.first_name} ${employee.last_name}`,
+        value: employee.id
+      }))
+    },
+    {
+      type: 'list',
+      name: 'roleId',
+      message: 'Select the employee\'s new role:',
+      choices: roles.map((role) => ({ name: role.title_name, value: role.id }))
+    }
+  ]);
+  await conn.execute(
+    `UPDATE employees SET role_id = ? WHERE id = ?`,
+    [roleId, employeeId]
+  );
+  console.log(`Updated employee role to ${roleId}`)
+  app();
+};
 app()
