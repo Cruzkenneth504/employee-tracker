@@ -32,7 +32,7 @@ node server.js
 
 ## Click Link below:
 
-[Walkthrought video]()
+[Walkthrought video](https://youtu.be/G66yAP3TETI)
 
 ## Images
 
