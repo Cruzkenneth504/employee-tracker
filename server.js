@@ -1,7 +1,8 @@
 const inquirer = require('inquirer');
 const mysql = require('mysql2/promise');
-const cTable = require('console.table');
 
+cTable = require('console.table');
+// mysql2/promise is used to create a connection pool to a MySQL database
 const pool = mysql.createPool({
   host: 'localhost',
   user: 'root',

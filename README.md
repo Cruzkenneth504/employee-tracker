@@ -40,6 +40,7 @@ node server.js
 
 <br/>
 <br/>
+
 ![CLI-example](./imgs/table%20view.png)
 
 
